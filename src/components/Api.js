@@ -21,7 +21,6 @@ export const getData = async (path) => {
   const data = axios
     .request(options)
     .then((response) => {
-      console.log(response.data);
       return response.data;
     })
     .catch(function (error) {

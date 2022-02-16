@@ -1,0 +1,11 @@
+
+.country-list {
+   display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0 auto;
+}
+.country-item {
+    border: 1px solid #5b5b5b;
+    padding: 5px 10px;
+}
