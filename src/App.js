@@ -1,24 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CountryList from "./components/CountryList";
+import { getData } from "./components/Api";
+import CountryListContainer from "./redux/containers/CountryListContainer";
 function App() {
+  const data = getData();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CountryListContainer />
+    </>
   );
 }
 
